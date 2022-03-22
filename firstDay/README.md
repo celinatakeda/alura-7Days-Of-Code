@@ -1,4 +1,4 @@
-Diferença entre "==" e "==="
+## Diferença entre "==" e "==="
 
 "==" compara se o valor da esquerda for o mesmo valor da direita, por exemplo:
 
