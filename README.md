@@ -8,7 +8,6 @@ Não é só de condições e operações booleanas que um código vive, então n
 
 ## Dia 3
 
-DIA 3
 Nesse dia vamos juntar tudo o que vimos nos dias anteriores para criarmos uma narrativa dinâmica. E para que essa história só acabe quando a pessoa que está lendo ela quiser, vamos adicionar loops para fazermos uma tarefa repetidas vezes!
 
 ## Dia 4
