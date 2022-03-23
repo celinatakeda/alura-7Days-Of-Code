@@ -12,5 +12,7 @@ Já o prompt() precisa que o usuário insira algum valor, que você poderá mani
 Exemplo:
 
 const cidade = prompt("Digite a sua cidade:");
+
 const msg = `Você é de ${cidade}!`;
+
 alert(msg);
