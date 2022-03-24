@@ -6,7 +6,6 @@ O if e o else são capazes de criar ramificações dentro da aplicação para qu
 
 Os loops (como for e while) são capazes de fazer uma tarefa repetitiva se transformar em poucas linhas de código, independente de quantas vezes você precisar repetir aquela tarefa.
 
-Existe também a estrutura de repetição (loop) while.
 
 Exemplo: 
 
