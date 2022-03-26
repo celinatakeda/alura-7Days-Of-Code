@@ -1,0 +1,12 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(236.85deg, #e7e1e6 27.26%, #2bc1db 96.03%);
+}
+
+input {
+    width: 200px;
+}
