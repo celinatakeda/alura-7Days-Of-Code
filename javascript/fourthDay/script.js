@@ -13,8 +13,7 @@ function Chutar() {
             return;
         }else {            
             resposta.innerHTML = `Errou! Você tem ${tentativas - 1}`
-            tentativas--;          
-            
+            tentativas--;             
         }
 
         if (tentativas == 0) {

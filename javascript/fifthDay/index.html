@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>#7Days Of Code - Dia 5</h1>
-    <h2>Lista de Supermercado</h2>
-    <h2>Você deseja adicionar uma comida na sua lista de compras?</h2>
-    <button type="submit" onclick="Inserir()">Sim</button>
-    <button>Não</button>
-    <br>
-    <h2 id="inserir"></h2>
+    <header>
+        <img src="./imagem/BMPXs60.png" />
+      </header>    
     
-    <script src="script.js"></script>
+    <h2 id="titulo">Lista de Supermercado</h2>
+    <h3 id="pergunta" style="color: rgb(24, 23, 22);">Você deseja adicionar um alimento na sua lista?</h3>
+    <button id="botaoSim" type='submit' onclick='Continuar()'>Sim</button>
+    <button id="botaoNao" type='submit' onclick='NaoContinuar()'>Não</button>
+   
+    <h3 id="pergunta2"></h3>
+    <h3 id="input"></h3>
+    <h3 id="pergunta3"></h3>
+    <h3 id="categoria"></h3>    
+    <h4 id="listaCompras"></h4>
+    <script src="app.js"></script>
 </body>
 </html>

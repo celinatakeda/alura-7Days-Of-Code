@@ -1,12 +1,15 @@
-* {
-    font-family: sans-serif;
-}
 
 body {
+    font-family: sans-serif;
+    background-image: url("https://www.proteste.org.br/-/media/proteste/images/home/supermercados/guia-supermercados.png?rev=109582c2-a645-4989-bfb5-9df64272dc89");
     text-align: center;
-    background: linear-gradient(236.85deg, #e7e1e6 27.26%, #2bc1db 96.03%);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;   
+   
 }
 
 input {
     width: 200px;
 }
+
