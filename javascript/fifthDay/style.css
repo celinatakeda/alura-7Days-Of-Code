@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url("https://www.proteste.org.br/-/media/proteste/images/home/supermercados/guia-supermercados.png?rev=109582c2-a645-4989-bfb5-9df64272dc89");
     text-align: center;
     background-size: cover;
@@ -9,7 +10,17 @@ body {
    
 }
 
+main {
+    height: 410px;
+}
+
 input {
     width: 200px;
 }
 
+footer {
+    font-size: 12px;   
+    display: flex;
+    justify-content: center;
+    
+}
