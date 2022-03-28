@@ -89,7 +89,7 @@ function Continuar() {
         document.getElementById("botaoRemover").style.display = 'none';     
 
         pergunta.innerHTML = `<h2>Lista de compras:</h2><h5>Frutas: ${frutas.join(",  ")} <br><br> Legumes: ${legumes.join(", ")}<br><br>Laticínios: ${laticinios.join(", ")}<br><br> Congelados: ${congelados.join(", ")}<br><br> Doces: ${doces.join(", ")}</h5>`;
-        voltar.innerHTML = "<a href='index.html': history.go(-1)'>Go Back</a>"        
+        voltar.innerHTML = "<a href='index.html': history.go(-1)'>Go Back</a>"     
     }  
 
     function Remover() {        
@@ -110,12 +110,11 @@ function Continuar() {
 
         if (pos == -1) {
             alert("Não foi possível encontrar o item dentro da lista!");
-        }
-
-        frutas.splice(pos, 1);   
-        alert("Produto removido com sucesso!");     
-        Imprimir()
-        return;
+        }else {
+            frutas.splice(pos, 1);   
+            alert("Produto removido com sucesso!");
+            Imprimir();
+        }       
     }
 
     function RemoverLegumes() {
@@ -124,12 +123,12 @@ function Continuar() {
 
         if (pos == -1) {
             alert("Não foi possível encontrar o item dentro da lista!");
-        }
-
-        legumes.splice(pos, 1);   
-        alert("Produto removido com sucesso!");     
-        Imprimir()
-        return;
+        }else {
+            legumes.splice(pos, 1);   
+            alert("Produto removido com sucesso!");
+            Imprimir();
+        }      
+       
     }
 
     function RemoverLaticinios() {
@@ -138,12 +137,11 @@ function Continuar() {
 
         if (pos == -1) {
             alert("Não foi possível encontrar o item dentro da lista!");
-        }
-
-        laticinios.splice(pos, 1);   
-        alert("Produto removido com sucesso!");     
-        Imprimir()
-        return;
+        }else {
+            laticinios.splice(pos, 1);   
+            alert("Produto removido com sucesso!");
+            Imprimir();
+        }        
     }
 
     function RemoverCongelados() {
@@ -152,13 +150,12 @@ function Continuar() {
 
         if (pos == -1) {
             alert("Não foi possível encontrar o item dentro da lista!");
+        }else {
+            congelados.splice(pos, 1);   
+            alert("Produto removido com sucesso!");
+            Imprimir();
         }
-
-        congelados.splice(pos, 1);   
-        alert("Produto removido com sucesso!");     
-        Imprimir()
-        return;
-    }
+    }       
 
     function RemoverDoces() {
         var alimento = document.getElementById("alimento").value;
@@ -166,12 +163,11 @@ function Continuar() {
 
         if (pos == -1) {
             alert("Não foi possível encontrar o item dentro da lista!");
-        }
-
-        doces.splice(pos, 1);   
-        alert("Produto removido com sucesso!");     
-        Imprimir()
-        return;
+        }else {
+            doces.splice(pos, 1);   
+            alert("Produto removido com sucesso!");
+            Imprimir();
+        }       
     }
 
 
