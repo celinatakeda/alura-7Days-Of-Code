@@ -6,3 +6,13 @@ body {
     text-align: center;
     background: linear-gradient(236.85deg, #e7e1e6 27.26%, #db2b7d 96.03%);
 }
+
+button {
+    width: 80px;
+    height: 30px;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: blue; 
+  }

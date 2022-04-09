@@ -12,7 +12,7 @@ function Chutar() {
             resposta.innerHTML = "Parabéns! Você acertou!"
             return;
         }else {            
-            resposta.innerHTML = `Errou! Você tem ${tentativas - 1}`
+            resposta.innerHTML = `Errou!<br> Você tem mais ${tentativas - 1} tentativas`
             tentativas--;             
         }
 
