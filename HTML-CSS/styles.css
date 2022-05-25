@@ -68,8 +68,7 @@ a {
     background-color: #8E2424;
     color: #fff;
     border-radius: 5px;   
-    border: transparent;
-  
+    border: transparent;  
     align-items: flex-end;
 }
 
@@ -101,15 +100,47 @@ h1 {
     font-size: 20px;
 }
 
-.metricas {
-    border: 1px solid black;
+.metricas {    
     height: 288px;
-    padding: 80px;
+    padding: 80px;        
 }
 
-.container-metrica {
-    height: 192px;
-    border: 1px solid red;
+.container-metrica {   
+    height: 192px;    
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    margin: 0;
+    border: 1px solid red;    
+}
+
+._MetricaItem {    
+    list-style: none;
+    flex: 1;
+}
+
+.container-metrica ul li:first-child{    
+    font-size: 60px;
+    color: #8E2424;
+    font-weight: 700; 
+       
+}
+
+._MetricaItem  li:nth-child(2) {
+    font-weight: 500;
+    font-size: 18px;
+    color:#101828;
     
 }
+
+._MetricaItem li:nth-child(3) {
+    color: #667085;
+   
+}
+
+
+
+
+
 
