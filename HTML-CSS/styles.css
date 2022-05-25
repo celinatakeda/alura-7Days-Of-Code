@@ -2,9 +2,10 @@
     margin: 0;
     font-family: "inter", sans-serif;
 }
-.navBar {
+
+body {
     width: 100%;
-    height: 80px;       
+    height: 80px;   
 }
 
 header {
@@ -23,8 +24,7 @@ header {
     padding: 0px, 32px, 0px, 32px;
     display: flex;
     align-items: center;
-    justify-content: center;      
-     
+    justify-content: center;       
 }
 
 img {   
@@ -72,3 +72,44 @@ a {
   
     align-items: flex-end;
 }
+
+.subtitulo {
+    color: #8E2424;
+    margin-top: 96px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+p, h1 {   
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+h1 {
+    font-size: 48px;
+    color: #101828;
+}
+
+.texto-sobre-nos {
+    color: #667085;
+    margin-left: 324px;
+    margin-right: 325px;
+    height:60px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.metricas {
+    border: 1px solid black;
+    height: 288px;
+    padding: 80px;
+}
+
+.container-metrica {
+    height: 192px;
+    border: 1px solid red;
+    
+}
+
