@@ -15,7 +15,7 @@ body {
 }
 
 .container{
-    width: 92%;    
+    width: 90%;    
     height: 5vh;
     margin: 3%;      
     display: flex;
@@ -85,16 +85,16 @@ h1 {
     font-size: 20px;
 }
 
-.container-metrica { 
-    margin: 1%;
+.container-metrica {     
     height: 192px;    
     display: flex;  
     align-items: center;
     justify-content: space-around;     
-    padding: 80px;     
+    padding: 100px;     
 }
 
-._MetricaItem {    
+._MetricaItem { 
+    justify-content: space-between;  
     list-style: none;
     flex: 1;
     align-items: flex-end;
@@ -119,6 +119,13 @@ h1 {
     color: #667085;
     margin-top: 0.5rem;
    
+}
+
+.vagas {
+    width: 100%;
+    height: 30vh; 
+    text-align: center; 
+
 }
 
 
