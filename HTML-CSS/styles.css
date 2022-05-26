@@ -1,7 +1,9 @@
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --gray-900: #101828;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -64,24 +66,24 @@ button {
 }
 
 .subtitulo {
-    color: #8E2424;      
+    color: var(--main-color);      
     font-size: 16px;
     margin-top: 96px;
+    font-weight: 700;
 }
 
 h1 {
     font-size: 48px;
-    color: #101828;
+    color: var(--gray-900);
     margin-top: 20px;
 }
 
-.texto-sobre-nos {
+.texto {
     color: #667085;
     margin-left: 324px;
     margin-right: 325px;
     height:60px;
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px;    
     font-size: 20px;
 }
 
@@ -89,7 +91,7 @@ h1 {
     height: 192px;    
     display: flex;  
     align-items: center;
-    justify-content: space-around;     
+    justify-content: space-between;     
     padding: 100px;     
 }
 
@@ -98,8 +100,7 @@ h1 {
     list-style: none;
     flex: 1;
     align-items: flex-end;
-    margin-top: 0.3rem; 
-    
+    margin-top: 0.3rem;     
 }
 
 .container-metrica ul li:first-child{    
@@ -111,21 +112,53 @@ h1 {
 ._MetricaItem  li:nth-child(2) {
     font-weight: 500;
     font-size: 18px;
-    color:#101828;
+    color: var(--gray-900);
     margin-top: 0.5rem;    
 }
 
 ._MetricaItem li:nth-child(3) {
     color: #667085;
-    margin-top: 0.5rem;
-   
+    margin-top: 0.5rem;   
 }
 
-.vagas {
-    width: 100%;
-    height: 30vh; 
-    text-align: center; 
+.vagas {    
+    text-align: center;   
+}
 
+.area {
+    margin-left: 20%;
+    width: 50%;    
+    color: var(--gray-900);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+    
+}
+
+.profissao {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25%;
+    color: var(--gray-900);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25%;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 
