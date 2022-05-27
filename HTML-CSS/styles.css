@@ -13,20 +13,22 @@
 
 body {
     width: 100%;
-    height: 100vh;          
+    height: 100vh;              
 }
 
-.container{
-    width: 90%;    
-    height: 5vh;
-    margin: 3%;      
+.container {
+    width: 92%;    
+    height: 5vh;                
+}
+
+.container, .content, .container-metrica{
     display: flex;
-    align-items: center;           
+    align-items: center;
 }
 
 .logo {
     margin: 0.5rem;    
-    margin-left: 3%;  
+    margin-left: 10%;  
     width: 27px;
     height: 27px;    
 }
@@ -35,9 +37,7 @@ a {
     text-decoration: none;
 }
 
-.content{ 
-    display: flex;
-    align-items: center;
+.content{   
     justify-content: center;     
     gap: 40px;
     flex: 1;
@@ -54,75 +54,86 @@ button {
     font-size: 0.9rem;
 }
 
-#signUp {
+#signUp, .formulario-container button {
     background-color: var(--main-color);
     color: #fff;     
 }
 
-.cabecalho {
-    width: 100%;
-    height: 30vh; 
-    text-align: center;   
+/* Cabeçalho - Primeira seção */
+
+.about-us, .vagas-container {
+   padding: 7rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos os filhos de uma div com display flex*/    
 }
 
-.subtitulo {
-    color: var(--main-color);      
-    font-size: 16px;
-    margin-top: 96px;
+.about-us span, .vagas-container span, .depoimento p {
+    font-size: 1.5rem;
+    color: var(--main-color);
     font-weight: 700;
+}
+
+.about-us p, .vagas-container p  {   
+    max-width: 50%;      
+}
+
+.about-us p, .vagas-container p, .formulario-container p {
+    color: var(--text-color);          
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 20px;
 }
 
 h1 {
     font-size: 48px;
-    color: var(--gray-900);
-    margin-top: 20px;
+    color: var(--gray-900);    
+}
+
+/* Métricas - segunda seção */
+
+.metricas-container {    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10rem;
+    margin: 50px;
+    gap: 64px;       
+}
+
+.metricas-container h1 {
+    color: var(--main-color);    
+}
+
+.subtitulo {
+    margin-top: 1rem;
+    font-weight: 700;
 }
 
 .texto {
-    color: #667085;
-    margin-left: 324px;
-    margin-right: 325px;
-    height:60px;
-    margin-top: 20px;    
-    font-size: 20px;
+    margin-top: 0.5rem;
+    color: var(texto-color);
 }
 
-.container-metrica {     
-    height: 192px;    
-    display: flex;  
+._metricaItem {
+    flex: 1;   
+}
+.vagas-container {  
+  width: 90%;
+  height: 92vh;    
+}
+
+.imagem-vagas {
+    display: flex;
     align-items: center;
-    justify-content: space-between;     
-    padding: 100px;     
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-._MetricaItem { 
-    justify-content: space-between;  
-    list-style: none;
-    flex: 1;
-    align-items: flex-end;
-    margin-top: 0.3rem;     
-}
-
-.container-metrica ul li:first-child{    
-    font-size: 60px;
-    color: #8E2424;
-    font-weight: 700;        
-}
-
-._MetricaItem  li:nth-child(2) {
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--gray-900);
-    margin-top: 0.5rem;    
-}
-
-._MetricaItem li:nth-child(3) {
-    color: #667085;
-    margin-top: 0.5rem;   
-}
-
-.vagas {    
-    text-align: center;   
+.vagas-abertas { 
+    width: 90%;
+    height: 80vh;  
 }
 
 .area {
@@ -131,19 +142,16 @@ h1 {
     color: var(--gray-900);
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 80px;
-    margin-top: 50px;
+    margin-bottom: 60px;   
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
-    
-    
+    justify-content: flex-start;    
 }
 
 .profissao {
     display: flex;
     justify-content: flex-start;
-    margin-left: 25%;
+    margin-left: 22%;
     color: var(--gray-900);
     font-size: 18px;
     font-weight: 700;
@@ -153,13 +161,81 @@ h1 {
 .descricao {
     display: flex;
     justify-content: flex-start;
-    margin-left: 25%;
+    margin-left: 22%;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
+
+.depoimento-container {
+    width: 70%;
+    height: 60vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 13%;
+    background-color: rgba(255,0, 0, 0.03);    
+    
+}
+
+.depoimento {
+    text-align: center;
+    font-weight: 700; 
+}
+
+.depoimento-container .depoimento p {   
+    margin-bottom: 30px;    
+}
+
+.depoimento-container .depoimento span {    
+    font-size: 30px;        
+}
+
+.avatar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 460px;
+    max-height: 160px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); ;
+}
+
+.depoimento-nome {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.formulario-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}   
+
+.formulario-container p {      
+    margin-top: 20px;       
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-container input{
+    margin-top: 30px; 
+    border-radius: 3px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 50px;  
+}
+
+.formulario footer {
+    margin-bottom: 30px;
+}
+
 
 
 
