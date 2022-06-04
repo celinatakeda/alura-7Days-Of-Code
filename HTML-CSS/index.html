@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#7DaysOfCode-HTML e CSS</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>OptimusTech</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,20 +13,23 @@
 
 <body>
     <nav>
-        <div class="container">
-                <img class="logo" src="./image/logo.png">
-                <a href="">OptimusTech</a>
-                <div class="content">
-                    <a href="#">Home</a>
-                    <a href="#">Produtos</a>
-                    <a href="#">Recursos</a>
-                    <a href="#">Sobre nós</a>                     
-                </div>
-                <div>
+        <img src="./assets/images/logo.svg" />
+        <div class="sideMenu">
+            <img src="./assets/images/menu-icon.svg" alt="Menu Icon" />
+        </div>
+        <div class="menu">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Recursos</a>
+                <a href="#">Sobre nós</a>  
+            </div>
+            
+            <div class="buttons">
                     <button>Entrar</button>                    
-                    <button id="signUp">Cadastrar</button>
-                </div>
-            </div>            
+                    <button class="signUp">Cadastrar</button>
+            </div>
+        </div>            
     </nav>
 
     <section class="about-us">
@@ -35,84 +38,101 @@
         <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é relmente importante para elas.</p>           
     </section>
 
-    <section class="metricas-container">
-        <div class="_metricaItem">
+    <section class="metrics">
+        <div class="metric">
             <h1>400+</h1>                  
-            <p class="subtitulo">Projetos concluídos</p>                 
-            <p class="texto">Nós ajudamos a construir mais de 400 projetos incíveis.</p>
+            <span class="metric-title">Projetos concluídos</span>                 
+            <span>Nós ajudamos a construir mais de 400 projetos incíveis.</span>
         </div>
         
-        <div class="_metricaItem">
+        <div class="metric">
             <h1 >100+</h1>
-            <p class="subtitulo">Colaboradores</p>
-            <p class="texto">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            <span class="metric-title">Colaboradores</span>
+            <span>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</span>
         </div>              
-        <div class="_metricaItem">
+        <div class="metric">
             <h1>20k</h1>
-            <p class="subtitulo">Downloads</p>
-            <p class="texto">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+            <span class="metric-title">Downloads</span>
+            <span>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</span>
         </div>                
-        <div class="_metricaItem">
+        <div class="metric">
             <h1>500+</h1>
-            <p class="subtitulo">Reviews 5 estrelas</p>
-            <p class="texto">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+            <span class="metric-title">Reviews 5 estrelas</span>
+            <span>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</span>
         </div> 
     </section>
 
-    <section class="vagas-container">
+    <section class="talents">
         <span>Vagas abertas</span>
-        <h1>Estamos procurando por talentos</h1>
+        <h2>Estamos procurando por talentos</h2>
         <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-        <div class="imagem-vagas">
-            <img  src="./image/vagas.png">
-        </div>
-        
+        <img  src="./assets/images/equipe.png" alt="Nosso time">       
     </section>
 
     <section class="vagas-abertas">
-        <p class="area">Design</p>
-        <p class="profissao">Product Designer</p>
-        <p class="descricao">Full-time Faixa salarial: R$ 7.000</p>
 
-        <p class="profissao">UX Designer</p>
-        <p class="descricao">Full-time Faixa salarial: R$ 6.000</p>
+        <span class="area-principal">Design</span>
 
-        <p class="area">Desenvolvimento de Software</p>
-
-        <p class="profissao">Desenvolvedor(a)iOS</p>
-        <p class="descricao">Full-time Faixa salarial: R$ 8.000</p>
-
-        <p class="profissao">UX Desenvolvedor(a) Front-end</p>
-        <p class="descricao">Full-time Faixa salarial: R$ 7.000</p>
-
-        <p class="profissao">UX Desenvolvedor(a) Back-end</p>
-        <p class="descricao">Full-time Faixa salarial: R$ 8.000</p>
-    </section>
-
-    <section class="depoimento-container">
-        <div class="depoimento">
-            <p>Veja o que nossos colaboradores falam sobre nós</p>
-            <span>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</span>
+        <div class="vaga">
+            <span class="titulo-vaga">Product Designer</span>           
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$ 7.000</span> 
+            </div>
         </div>
-        <div class="avatar">
-            <img class="avatar" src="https://github.com/celinatakeda.png">
-            <p class="depoimento-nome">Celina Takeda</p>
-            <p>Desenvolvedora Web</p>
-        </div>
-    </section>    
 
-    <section class="formulario-container">
-        <div class="formulario">
-            <h1>Acompanhe as nossas oportunidades</h1>
-            <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
-            <div>
-                <input type="text" placeholder="Seu e-mail">
-                <button>Cadastrar</button>
+            <div class="vaga">
+                <span class="titulo-vaga">UX Designer</span>           
+                <div class="informacoes">
+                    <span>Full-time</span>
+                    <span>Faixa salarial: R$ 6.000</span>
+                </div>
             </div>
 
-            <footer>2022 OptimusTech. Todos os direitos reservados</footer>
+        <span class="area-principal">Desenvolvimento de Software</span>
+
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) iOS Pleno</span>            
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$ 8.000</span>
+            </div>
         </div>
-    </section>
-            
+
+        <div class="vaga">
+            <span class="titulo-vaga">UX Desenvolvedor(a) Front-end Júnior</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$ 3.500</span>
+            </div>
+        </div>
+
+        <div class="vaga">
+            <span class="titulo-vaga">UX Desenvolvedor(a) Back-end</span>
+            <div class="informacoes">
+                <span>Estágio</span>
+                <span>Faixa salarial: R$ 2.000</span>
+            </div>            
+        </div>               
+    </section>    
+
+    <section class="depoimento">
+        <span>Veja o que nossos colaboradores falam sobre nós</span>
+        <h2>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
+        <img src="./assets/images/avatar.png">
+        <span class="nome">Júlia Castro</span>
+        <span class="cargo">Desenvolvedora Web</span>        
+    </section>    
+
+    <footer>
+        <h2>Acompanhe as nossas oportunidades</h2>
+        <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
+        <form>
+            <input type="email" placeholder="Seu e-mail">
+            <button class="signUp">Cadastrar</button>
+        </form>
+        <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+    </footer>
+    <script src="./index.js"></script>           
 </body>
 </html>
