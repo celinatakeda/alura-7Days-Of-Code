@@ -1,5 +1,7 @@
-justify - está relacionado ao eixo principal
+# 7 Days of Code - HTML e CSS
 
-align - está relacionado ao eixo transversal
+Esse projeto foi realizado para um desafio de 7 dias de código.
+
+O design do projeto foi construído no Figma e o desafio é reproduzir o layout desse código, utilizando as tecnologias HTML (linguagem de marcação) e CSS (linguagem de estilos).
 
 
