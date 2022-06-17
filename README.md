@@ -1,5 +1,5 @@
 # 7 Days of Code
 
-Realizar projetos no desafio de 7 dias de código.
+Desenvolvendo projetos em 7 dias.
 
 
