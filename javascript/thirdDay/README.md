@@ -8,7 +8,7 @@ Os loops (como for e while) são capazes de fazer uma tarefa repetitiva se trans
 
 
 Exemplo de while: 
-
+```
 let idade = 0;
 
 while (idade < 8) {
@@ -17,3 +17,4 @@ while (idade < 8) {
 
     idade++;
 }
+```
